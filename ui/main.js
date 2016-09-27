@@ -1,5 +1,3 @@
-console.log('Loaded!');
-
 // counter code
 var button = document.getElementById('counter');
 
@@ -23,4 +21,4 @@ button.onclick = function () {
     // make the request
     request.open('GET', 'http://nanduzira.imad.hasura-app.io', true);
     request.send(null);
-}
+};
