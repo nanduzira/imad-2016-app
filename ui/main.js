@@ -30,7 +30,6 @@ submit.onclick = function () {
     var request = new XMLHttpRequest();
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
-    
     // capture the response and store it in a variable
     request.onreadystatechange = function () {
         if(request.readyState === XMLHttpRequest.DONE) {
