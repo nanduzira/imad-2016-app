@@ -7,19 +7,13 @@ app.use(morgan('combined'));
 
 var articles = {
     'article-one': {
-    title: 'Article One | Anand Krishna Sunil',
-    heading: 'Article One',
-    date: 'SEP 15, 2016',
-    content:
-        `<p>
-          This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>
-        <p>
-          This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>
-        <p>
-          This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>`
+        title: 'Article One | Anand Krishna Sunil',
+        heading: 'Article One',
+        date: 'SEP 15, 2016',
+        content:
+            `<p>
+                  This is the content for my one article.
+            </p>`
 },
     'article-two': {
         title: 'Article Two | Anand Krishna Sunil',
@@ -32,12 +26,12 @@ var articles = {
     },
     'article-three': {
         title: 'Article Three | Anand Krishna Sunil',
-    heading: 'Article Three',
-    date: 'SEP 15, 2016',
-    content:
-        `<p>
-          This is the content for my third article.
-        </p>`
+        heading: 'Article Three',
+        date: 'SEP 15, 2016',
+        content:
+            `<p>
+              This is the content for my third article.
+            </p>`
     },
 };
 
