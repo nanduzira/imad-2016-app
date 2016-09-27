@@ -2,16 +2,25 @@ console.log('Loaded!');
 
 // counter code
 var button = document.getElementById('counter');
-var counter = 0;
 
 button.onclick = function () {
     
-    // make a request t the counter endpoint
+    // create a request object
+    var request = new XMLHttpRequest();
     
     // capture the response and store it in a variable
-    
-    //render the variable in the correct span
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    request.onreadystatechange = function () {
+        if(request.readyState === XMLHttpRequest.DONE) {
+            // take some action
+            if(request.status === 200) {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+        // not done yet
+    };
+    // make the request
+    request.open('GET', 'http://nanduzira.imad.hasura-app.io', true);
+    request.send(null);
 }
